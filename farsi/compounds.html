@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persian Compound Verbs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Mirza:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="https://sios.ac/wp-content/uploads/2021/06/logo-full-png-2.png">
+</head>
+
+<body>
+    <div class="logo">
+        <a href="/"><img style="max-width: 100px;" src="https://sios.ac/wp-content/uploads/2021/06/logo-full-png-2.png"></a>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Compound Verb List</h1>
+        </header>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th width="20%" class="persian">مصدر</th>
+                        <th width="20%" class="english">English</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Verbs will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Made by a SIOS student</p>
+        </footer>
+    </div>
+
+    <script>
+        const verbs = [
+            { "infinitive": "نقاشى کشيدن", "english": "to draw" },
+            { "infinitive": "پاک کردن", "english": "to erase/remove" },
+            { "infinitive": "دوش گرفتن", "english": "to shower" },
+            { "infinitive": "کمک کردن", "english": "to help" },
+            { "infinitive": "مطالعه کردن", "english": "to study" },
+            { "infinitive": "ازدواج کردن", "english": "to marry" },
+            { "infinitive": "جارو کردن/زدن", "english": "to sweep" },
+            { "infinitive": "تميز کردن", "english": "to clean" },
+            { "infinitive": "زندگى کردن", "english": "to live" },
+            { "infinitive": "دوست داشتن", "english": "to like/love" },
+            { "infinitive": "درس دادن", "english": "to teach" },
+            { "infinitive": "معاينه کردن", "english": "to examine (doctor)" },
+            { "infinitive": "گوش کردن", "english": "to listen" },
+            { "infinitive": "حرف زدن", "english": "to talk" },
+            { "infinitive": "نگاه کردن", "english": "to look" },
+            { "infinitive": "کار کردن", "english": "to work" },
+            { "infinitive": "رنگ زدن", "english": "to paint" },
+            { "infinitive": "استفاده کردن", "english": "to use" },
+            { "infinitive": "انتخاب کردن", "english": "to choose" },
+            { "infinitive": "اتو زدن", "english": "to iron (clothes)" },
+            { "infinitive": "اندازه گرفتن", "english": "to measure" },
+            { "infinitive": "وزن کردن", "english": "to weigh" },
+            { "infinitive": "حساب کردن", "english": "to calculate" },
+            { "infinitive": "باز کردن", "english": "to open" },
+            { "infinitive": "مسافرت کردن", "english": "to travel" },
+            { "infinitive": "تماشا کردن", "english": "to watch" },
+            { "infinitive": "غرق کردن", "english": "to drown" },
+            { "infinitive": "نجات دادن", "english": "to save" },
+            { "infinitive": "خاموش کردن", "english": "to turn" },
+            { "infinitive": "سؤال کردن", "english": "to ask (questions)" },
+            { "infinitive": "بيدار شدن", "english": "to wake up" },
+            { "infinitive": "پوست کندن", "english": "to peel" },
+            { "infinitive": "سرخ کردن", "english": "to fry" },
+            { "infinitive": "دعوت کردن", "english": "to invite" },
+            { "infinitive": "تشکر کردن", "english": "to thank" },
+            { "infinitive": "خرد کردن", "english": "to crush/slice" },
+            { "infinitive": "صدا زدن", "english": "to call" },
+            { "infinitive": "لبخند زدن", "english": "to smile" },
+            { "infinitive": "بغل کردن", "english": "to hug" },
+            { "infinitive": "نوازش کردن", "english": "to caress" },
+            { "infinitive": "صحبت کردن", "english": "to speak" },
+            { "infinitive": "احترام گذاشتن", "english": "to respect" },
+            { "infinitive": "حرف زدن", "english": "to talk" },
+            { "infinitive": "سرما خوردن", "english": "to catch a cold" },
+            { "infinitive": "آمپول زدن", "english": "to inject (body)" },
+            { "infinitive": "مسابقه دادن", "english": "to race/compete" },
+            { "infinitive": "پيروز شدن", "english": "to win" },
+            { "infinitive": "شکست خوردن", "english": "to lose" },
+            { "infinitive": "دعوا کردن", "english": "to fight" },
+            { "infinitive": "درست کردن", "english": "to fix, to make" },
+            { "infinitive": "تعمیر کردن", "english": "to repair" },
+            { "infinitive": "تماس گرفتن", "english": "to call (on the phone)" },
+            { "infinitive": "عشق ورزیدن", "english": "to love (profoundly)" },
+            { "infinitive": "تصمیم گرفتن", "english": "to decide" },
+            { "infinitive": "سعی کردن", "english": "to try" },
+            { "infinitive": "اجرا کردن", "english": "to perform" },
+            { "infinitive": "پایان دادن", "english": "to end (something)" },
+            { "infinitive": "شروع شدن", "english": "to begin (intransitive)" },
+            { "infinitive": "تمام شدن", "english": "to be finished" },
+            { "infinitive": "فراموش کردن", "english": "to forget" },
+            { "infinitive": "به یاد آوردن", "english": "to remember" },
+            { "infinitive": "توجه کردن", "english": "to pay attention" },
+            { "infinitive": "نگران شدن", "english": "to worry" },
+            { "infinitive": "متوجه شدن", "english": "to realize" },
+            { "infinitive": "علاقه داشتن", "english": "to be interested in" },
+            { "infinitive": "احساس کردن", "english": "to feel" },
+            { "infinitive": "خسته شدن", "english": "to get tired" },
+            { "infinitive": "گرسنه شدن", "english": "to get hungry" },
+            { "infinitive": "تشنه شدن", "english": "to get thirsty" },
+            { "infinitive": "عصبانی شدن", "english": "to get angry" },
+            { "infinitive": "خوشحال شدن", "english": "to become happy" },
+            { "infinitive": "ناراحت شدن", "english": "to get upset" },
+            { "infinitive": "متولد شدن", "english": "to be born" },
+            { "infinitive": "طلاق گرفتن", "english": "to get divorced" },
+            { "infinitive": "مسافرت کردن", "english": "to travel" },
+            { "infinitive": "ورزش کردن", "english": "to exercise" },
+            { "infinitive": "رانندگی کردن", "english": "to drive" },
+            { "infinitive": "رد کردن", "english": "to reject" },
+            { "infinitive": "مخالفت کردن", "english": "to oppose" },
+            { "infinitive": "موافقت کردن", "english": "to agree" },
+            { "infinitive": "معرفی کردن", "english": "to introduce" },
+            { "infinitive": "تشکیل دادن", "english": "to form" },
+            { "infinitive": "توصیف کردن", "english": "to describe" },
+            { "infinitive": "توضیح دادن", "english": "to explain" },
+            { "infinitive": "تعویض کردن", "english": "to replace" },
+            { "infinitive": "امتحان کردن", "english": "to test, to try" },
+            { "infinitive": "کنترل کردن", "english": "to control" },
+            { "infinitive": "مدیریت کردن", "english": "to manage" },
+            { "infinitive": "سرمایه گذاری کردن", "english": "to invest" },
+            { "infinitive": "قبول شدن", "english": "to be accepted (e.g., in a university)" },
+            { "infinitive": "رد شدن", "english": "to be rejected, to fail" },
+            { "infinitive": "پیشنهاد دادن", "english": "to offer, to suggest" },
+            { "infinitive": "معذرت خواهی کردن", "english": "to apologize" },
+        ]
+
+        // Populate the table with verbs
+        const tableBody = document.querySelector('tbody');
+
+        verbs.forEach(verb => {
+            const row = document.createElement('tr');
+
+            row.innerHTML = `
+                <td class="persian">${verb.infinitive}</td>
+                <td class="english">${verb.english}</td>
+            `;
+
+            tableBody.appendChild(row);
+        });
+    </script>
+</body>
+
+</html>

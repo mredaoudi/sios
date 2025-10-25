@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persian Simple Verbs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Mirza:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <link rel="icon" href="https://sios.ac/wp-content/uploads/2021/06/logo-full-png-2.png">
+</head>
+<body>
+    <div class="logo">
+        <a href="/"><img style="max-width: 100px;" src="https://sios.ac/wp-content/uploads/2021/06/logo-full-png-2.png"></a>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Simple Verb Conjugation</h1>
+        </header>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th width="20%" class="persian">مصدر</th>
+                        <th width="20%" class="persian">ماضى</th>
+                        <th width="20%" class="persian">مضارع</th>
+                        <th width="20%" class="persian">امر</th>
+                        <th width="20%" class="english">English</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Verbs will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+        
+        <footer>
+            <p>Made by a SIOS student</p>
+        </footer>
+    </div>
+
+    <script>
+        const verbs = [
+            { infinitive: "بودن", past: "بود", present: "هست", imperative: "باش", english: "to be" },
+            { infinitive: "داشتن", past: "داشت", present: "دارد", imperative: "بدار", english: "to have" },
+            { infinitive: "کردن", past: "کرد", present: "می‌کند", imperative: "بکن", english: "to do" },
+            { infinitive: "شدن", past: "شد", present: "می‌شود", imperative: "بشو", english: "to become" },
+            { infinitive: "رفتن", past: "رفت", present: "می‌رود", imperative: "برو", english: "to go" },
+            { infinitive: "آمدن", past: "آمد", present: "می‌آید", imperative: "بیا", english: "to come" },
+            { infinitive: "گفتن", past: "گفت", present: "می‌گوید", imperative: "بگو", english: "to say" },
+            { infinitive: "دیدن", past: "دید", present: "می‌بیند", imperative: "ببین", english: "to see" },
+            { infinitive: "خوردن", past: "خورد", present: "می‌خورد", imperative: "بخور", english: "to eat" },
+            { infinitive: "نوشیدن", past: "نوشید", present: "می‌نوشد", imperative: "بنوش", english: "to drink" },
+            { infinitive: "خوابیدن", past: "خوابید", present: "می‌خوابد", imperative: "بخواب", english: "to sleep" },
+            { infinitive: "خواندن", past: "خواند", present: "می‌خواند", imperative: "بخوان", english: "to read" },
+            { infinitive: "نوشتن", past: "نوشت", present: "می‌نویسد", imperative: "بنویس", english: "to write" },
+            { infinitive: "دادن", past: "داد", present: "می‌دهد", imperative: "بده", english: "to give" },
+            { infinitive: "گرفتن", past: "گرفت", present: "می‌گیرد", imperative: "بگیر", english: "to take" },
+            { infinitive: "دانستن", past: "دانست", present: "می‌داند", imperative: "بدان", english: "to know" },
+            { infinitive: "خواستن", past: "خواست", present: "می‌خواهد", imperative: "بخواه", english: "to want" },
+            { infinitive: "توانستن", past: "توانست", present: "می‌تواند", imperative: "بتوان", english: "to can | to be able to" },
+            { infinitive: "گذاشتن", past: "گذاشت", present: "می‌گذارد", imperative: "بگذار", english: "to put" },
+            { infinitive: "آوردن", past: "آورد", present: "می‌آورد", imperative: "بیاور", english: "to bring" },
+            { infinitive: "بردن", past: "برد", present: "می‌برد", imperative: "ببر", english: "to take away" },
+            { infinitive: "شدن", past: "شد", present: "می‌شود", imperative: "بشو", english: "to become" },
+            { infinitive: "ماندن", past: "ماند", present: "می‌ماند", imperative: "بمان", english: "to stay" },
+            { infinitive: "نشستن", past: "نشست", present: "می‌نشید", imperative: "بنشین", english: "to sit" },
+            { infinitive: "یافتن", past: "یافت", present: "می‌یابد", imperative: "بیاب", english: "to find" },
+            { infinitive: "انداختن", past: "انداخت", present: "می‌اندازد", imperative: "بینداز", english: "to throw" },
+            { infinitive: "بستن", past: "بست", present: "می‌بندد", imperative: "ببند", english: "to close" },
+            { infinitive: "خریدن", past: "خرید", present: "می‌خرد", imperative: "بخر", english: "to buy" },
+            { infinitive: "فروختن", past: "فروخت", present: "می‌فروشد", imperative: "بفروش", english: "to sell" },
+            { infinitive: "پوشیدن", past: "پوشید", present: "می‌پوشد", imperative: "بپوش", english: "to wear" },
+            { infinitive: "شستن", past: "شست", present: "می‌شوید", imperative: "بشو", english: "to wash" },
+            { infinitive: "پختن", past: "پخت", present: "می‌پزد", imperative: "بپز", english: "to cook" },
+            { infinitive: "ساختن", past: "ساخت", present: "می‌سازد", imperative: "بساز", english: "to build" },
+            { infinitive: "شکستن", past: "شکست", present: "می‌شکند", imperative: "بشکن", english: "to break" },
+            { infinitive: "ریختن", past: "ریخت", present: "می‌ریزد", imperative: "بریز", english: "to pour" },
+            { infinitive: "کشیدن", past: "کشید", present: "می‌کشد", imperative: "بکش", english: "to pull" },
+            { infinitive: "زدن", past: "زد", present: "می‌زند", imperative: "بزن", english: "to hit" },
+            { infinitive: "پریدن", past: "پرید", present: "می‌پرد", imperative: "بپر", english: "to jump" },
+            { infinitive: "دویدن", past: "دوید", present: "می‌دود", imperative: "بدو", english: "to run" },
+            { infinitive: "خندیدن", past: "خندید", present: "می‌خندد", imperative: "بخند", english: "to laugh" },
+            { infinitive: "گریستن", past: "گریست", present: "می‌گرید", imperative: "بگری", english: "to cry" },
+            { infinitive: "شنیدن", past: "شنید", present: "می‌شنود", imperative: "بشنو", english: "to hear" },
+            { infinitive: "بوییدن", past: "بویید", present: "می‌بویید", imperative: "ببوی", english: "to smell" },
+            { infinitive: "چشیدن", past: "چشید", present: "می‌چشد", imperative: "بچش", english: "to taste" },
+            { infinitive: "پرسیدن", past: "پرسید", present: "می‌پرسد", imperative: "بپرس", english: "to ask" },
+            { infinitive: "ترسیدن", past: "ترسید", present: "می‌ترسد", imperative: "بترس", english: "to fear" },,
+            { infinitive: "مردن", past: "مرد", present: "می‌میرد", imperative: "بمیر", english: "to die" },
+            { infinitive: "باختن", past: "باخت", present: "می‌بازد", imperative: "بباز", english: "to lose" }
+        ];
+
+        // Populate the table with verbs
+        const tableBody = document.querySelector('tbody');
+        
+        verbs.forEach(verb => {
+            const row = document.createElement('tr');
+            
+            row.innerHTML = `
+                <td class="persian">${verb.infinitive}</td>
+                <td class="persian">${verb.past}</td>
+                <td class="persian">${verb.present}</td>
+                <td class="persian">${verb.imperative}</td>
+                <td class="english">${verb.english}</td>
+            `;
+            
+            tableBody.appendChild(row);
+        });
+    </script>
+</body>
+</html>
